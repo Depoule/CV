@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+
+  <title>CV</title>
+</head>
+<body>
+
+  <video id="video" autoplay="" muted="" loop="" >
+    <source src="assets/images/outrun.mp4" type="video/mp4">
+      Désolé, votre navigateur ne parvient pas à afficher la video
+    </video>
+
+    <!-- Début de la Barre de Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link animated fadeInLeft delay-1s" href="#profil">Profil</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link animated fadeInLeft delay-1s" href="#">Parcours</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+        <a class="mx-auto" href="index.html">
+          <img class="animated fadeInDown delay-1s" src="assets/images/logoneon.png" style="width: 5rem;" >
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" id="burger">
+          <span class="navbar-toggler-icon" id="burger2"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link animated fadeInRight delay-1s" href="#competences">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animated fadeInRight delay-1s" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+    <!-- Fin de la Barre de Navigation -->
+    <section id="accueil" class="section">
+      <div class="container-fluid">
+        <!-- Debut duBandeau -->
+        <div class="row" >
+          <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 bandeau">
+            <div class="offset-lg-3 col-lg-6 offset-lg-3">
+              <img class="logoneon"src="assets/images/logoneon.png">
+              <h1 class="animated fadeInLeft delay-1s">CV Julien POUlET<br>Developpeur Web</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Fin du Bandeau -->
+        <!-- Début du container Social -->
+        <div class="row social">
+          <div class="col-sm-6 col-md-4 col-lg-4 socialleft">
+            <a class="linkedin" href="https://fr.linkedin.com/">
+              <img class="reseauimage animated pulse delay-1s" src="assets/images/linklogo.png"/>
+              <p class="reseau">Linkedin</p>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 socialcenter">
+            <a class="github" href="https://github.com/">
+              <img class="reseauimage animated pulse delay-1s" src="assets/images/githublogo.png"/>
+              <p class="reseau">GitHub</p>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 socialright">
+            <a class="viadeo" href="https://fr.viadeo.com/fr/">
+              <img class="reseauimage animated pulse delay-1s" src="assets/images/viadeologo.png"/>
+              <p class="reseau">Viadeo</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Fin du container Social -->
+      <!-- Début de la Section Profil -->
+      <section id="profil" class="section">
+        <h2>Profil</h2>
+        <div class="row profilbloc0">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-8 profilbloc1">
+            <h3>Objectif</h3>
+            <p class="blabla">Ma réussite professionnelle étant mon objectif principal, je souhaite acquérir de l'expérience dans divers domaines tels que le développement d'applications et webs.
+              Je suis capable de travailler en autonomie dans un environnement dynamique et exigeant. Les métiers du numérique ont toujours été une passion et je souhaite en faire mon métier
+              Une forte motivation et des capacités d'analyse, de méthode et de rigueur m'aideront à forger mon avenir afin de devenir un bon développeur.
+            </p>
+            <h3>Mes Activités</h3>
+            <p class="blabla">Je réalise de l'assemblage de PC, en parallèle je fournis mon aide aux personnes qui le souhaitent que
+              ce soit pour un nettoyage d'ordinateur, un conseil ou un dépannage. De plus, j'envisage de développer des sites web (d'un simple site vitrine à un site plus complet) pour des clients en tant que micro-entrepreneur.
+            </p>
+            <ul class="activites">
+              <li>Assemblage</li>
+              <li>Développement de sites web</li>
+              <li>Assistance informatique aux utilisateurs</li>
+              <li>Dépannage informatique</li>
+            </ul>
+            <br>
+            <br>
+            <a class="bouton" href="assets/images/cv_julien.pdf" id="lien1"download title="Pdf">
+              <button class="btn"><i class="fa fa-download"></i>Télécharger mon CV</button>
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 profilbloc2">
+            <div class="coordonnees0">
+              <img class="photo img-fluid offset-2" src="assets/images/photoprofil.jpg">
+              <ul class="coordonnees">
+                <li>Nom : <br>Julien POULET</li><br>
+                <li>Date de naissance : <br>13 Mars 1985</li><br>
+                <li>Adresse : <br>Alaincourt - France</li><br>
+                <li>Nationalité : <br>Français</li><br>
+                <li>Téléphone : <br>06.16.69.03.70</li><br>
+                <li>Email : <br><p class="mailto">jpoulet02100@gmail.com</p></li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin de la Section Profil -->
+
+      <!-- Début de la Section Parcours-->
+      <section id="parcours" class="section">
+        <h2>Parcours Professionnel</h2>
+        <div class="container">
+          <h4>Mon Parcours Professionnel</h4>
+          <div class="row time">
+            <div class="col-md-12">
+              <div class="main-timeline4">
+                <div class="timeline">
+                  <a href="#" class="timeline-content">
+                    <span class="year">2017</span>
+                    <div class="inner-content">
+                      <h3 class="title"> Conseiller de Service à l'Usager</h3>
+                      <p class="description">
+                        CAF de l'Aisne - Saint-Quentin
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="timeline">
+                  <a href="#" class="timeline-content">
+                    <span class="year">2013</span>
+                    <div class="inner-content">
+                      <h3 class="title">Chargé d'Accueil / Technicien Informatique / Animateur Cyberbase</h3>
+                      <p class="description">
+                        Maison de l'Emploi et de la Formation - Saint-Quentin
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="timeline">
+                  <a href="#" class="timeline-content">
+                    <span class="year">2008</span>
+                    <div class="inner-content">
+                      <h3 class="title">Responsable Informatique</h3>
+                      <p class="description">
+                        Nestlé S.I.T.P.A - Rosières en Santerre
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="timeline">
+                  <a href="#" class="timeline-content">
+                    <span class="year">2005</span>
+                    <div class="inner-content">
+                      <h3 class="title">Technicien Informatique</h3>
+                      <p class="description">
+                        Nestlé France - Itancourt
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <h4>Mon Parcours de Formation</h4>
+          <div class="row time">
+            <div class="col-md-12">
+              <div class="main-timeline4">
+                <div class="timeline">
+                  <a href="#" class="timeline-content">
+                    <span class="year">2007</span>
+                    <div class="inner-content">
+                      <h3 class="title">BTS Technicien de Maintenance et Support Informatique (Contrat Pro)</h3>
+                      <p class="description">
+                        CESI Nord - Arras
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="timeline">
+                  <a href="#" class="timeline-content">
+                    <span class="year">2003</span>
+                    <div class="inner-content">
+                      <h3 class="title">Baccalauréat Sciences et Technologies du Tertiaire</h3>
+                      <p class="description">
+                        Lycée Pierre de La Ramée - Saint-Quentin
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin de la Section Parcours -->
+      <br>
+      <br><!-- Début de la Section Competences -->
+      <section id="competences" class="section">
+        <br>
+        <br>
+        <h2>Compétences</h2>
+
+        <div class="row compet">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 colleft">
+            <legend>HTML</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <legend>CSS</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <legend>BOOTSTRAP</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <legend>PHP</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 colright">
+            <legend>JAVASCRIPT</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <legend>ANGULAR</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <legend>LINUX</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <legend>SYMFONY</legend>
+            <div class="progress" style="height: 50px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin de la Section Compétences -->
+
+      <!-- Début de la section Contact -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-md-4 mt-5 test99">
+              <h4 class="text-center test98">Contactez moi</h1>
+                <hr class="bg-light">
+                <h5 class="text-center text-success"></h5>
+                <form action="" method="post" id="form-box" class="p-2">
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+                  </div>
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                  </div>
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-at"></i></span>
+                    </div>
+                    <input type="text" name="subject" class="form-control" placeholder="Sujet" required>
+                  </div>
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
+                    </div>
+                    <textarea name="msg" id="msg" class="form-control" placeholder="Votre message" cols="30" rows="4" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" name="submit" id="submit" class="btn btn-primary btn-block" value="Envoyer">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+    </html>

@@ -1,0 +1,350 @@
+video#video{
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 50%;
+  auto; z-index: -100;
+  transform: translate(-50%, -50%);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #474e5d;
+  font-family: "com64";
+  overflow-x: hidden;
+}
+h1{
+  font-size: 50px;
+}
+h2{
+  color: #DEF700;
+  font-size: 40px;
+  text-align: center;
+  font-family: "bttf"
+}
+h3{
+  color: white;
+  font-size: 40px;
+  font-family: "bttf"
+}
+h4{
+  text-align:center;
+  margin:30px 0;
+  color:white
+}
+p{
+  color: white;
+  font-size: 20px;
+  font-family: "com64"
+}
+ul{
+  color: white;
+  font-size: 20px;
+  font-family: "com64"
+}
+legend{
+  color: #DEF700;
+}
+label{
+  margin-left: 20%;
+  color: white;
+  font-size: 1.5rem;
+}
+a{
+  text-decoration:none
+}
+.blabla{
+  text-align: justify;
+}
+.navbar{
+  font-family: "com64";
+  background-color: rgba(41, 242, 242, 0.4);
+  color: black;
+}
+.nav-link{
+  color: #DEF700;
+  font-size: 1.5rem;
+}
+.nav-link:hover{
+  color: white;
+}
+.nav-item{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: black;
+}
+#burger{
+  background-color: rgba(41, 242, 242, 0.4);
+}
+#burger2{
+  background-color: #DEF700;
+}
+.bandeau{
+  text-align: center;
+  margin-top: 19%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #DEF700;
+  font-family: "blade";
+  padding-bottom: 10px;
+}
+.logoneon{
+  width: 20%;
+}
+.reseau{
+  text-align: center;
+  padding-top: 4%;
+  font-family: "com64";
+  font-size: 2rem;
+  color: white;
+}
+.social{
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  background-color: rgba(41, 242, 242, 0.4);
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 30px;
+  height: 100%;
+}
+.reseauimage{
+  width: 5rem;
+  float: left;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+.social div:hover{
+  filter: invert(1);
+}
+/* Début partie profil */
+.profilbloc0{
+  height: 500%;
+  margin-bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.photo{
+  max-width: 50%;
+  max-height: 50%;
+  min-width: 30%;
+  min-height: 30%;
+  border-radius: 50px;
+  width: 100%;
+  /* padding-left: 10%; */
+}
+.coordonnees0{
+  padding-left: 15%;
+}
+.coordonnees0 li{
+  list-style: none;
+}
+.mailto{
+  text-decoration: none;
+  color: white;
+}
+.mailto:hover{
+  color: #DEF700;
+}
+#lien1{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+#lien1:hover{
+  color: #DEF700;
+}
+.description{
+  color: white;
+}
+.time{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* Fin partie Profil */
+.progress{
+  border-radius: 50px;
+}
+.bouton{
+  margin-left: 30%;
+}
+.compet{
+  margin-bottom: 20%;
+  margin-top: 20%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*TIMELINE*/
+/* The actual timeline (the vertical ruler) TAILLE DE LA BARRE*/
+.timeline1 {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) POUR QU'ON VOIE LA BARRE */
+.timeline1::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/* Container around content BOITES DE CHAQUE COTÉ*/
+.container1 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline PRÉSENCE DES POINTS*/
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* Place the container to the left PLACE LA BOITE A GAUCHE DE LA BARRE*/
+.left {
+  left: 0;
+}
+/* Place the container to the right PLACE LA BOITE A DROITE DE LA BARRE*/
+.right {
+  left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+/* Fix the circle for containers on the right side PLACE LE POINT A GAUCHE POUR LES BOITES A DROITE */
+.right::after {
+  left: -16px;
+}
+/* The actual content  CRÉE LA BOITE*/
+.content {
+  padding: 20px 30px;
+  background-color: rgba(41, 242, 242, 0.4);
+  position: relative;
+  border-radius: 6px;
+}
+@font-face{
+  font-family: "neon80s";
+  src: url("../fonts/Neon.ttf");
+}
+@font-face{
+  font-family: "blade";
+  src:url("../fonts/blade.ttf");
+}
+@font-face{
+  font-family: "digital";
+  src: url("../fonts/digital.ttf");
+}
+@font-face{
+  font-family: "bttf";
+  src:url("../fonts/bttf.ttf");
+}
+@font-face{
+  font-family: "com64";
+  src: url("../fonts/com64.ttf");
+}
+/* Style buttons */
+.btn {
+ background-color: rgba(41, 242, 242, 0.4);
+ border-radius: 20px;
+ color: white;
+ padding: 12px 30px;
+ cursor: pointer;
+ font-size: 20px;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+ background-color: RoyalBlue;
+}
+/* Formulaire de Contact */
+.test99{
+  background-color: rgba(41, 242, 242, 0.4);
+  border-radius: 25px;
+}
+.test98{
+  color; #DEF700;
+}
+/******************* Timeline Demo - 4 *****************/
+.main-timeline4{overflow:hidden;position:relative}
+.main-timeline4:before{content:"";width:5px;height:70%;background:#333;position:absolute;top:70px;left:50%;transform:translateX(-50%)}
+.main-timeline4 .timeline-content:before,.main-timeline4 .timeline:before{top:50%;transform:translateY(-50%);content:""}
+.main-timeline4 .timeline{width:50%;padding-left:100px;float:right;position:relative}
+.main-timeline4 .timeline:before{width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid #333;position:absolute;left:-10px}
+.main-timeline4 .timeline-content{display:block;padding-left:150px;position:relative}
+.main-timeline4 .timeline-content:before{width:90px;height:10px;border-top:7px dotted #333;position:absolute;left:-92px}
+.main-timeline4 .year{display:inline-block;width:120px;height:120px;line-height:100px;border-radius:50%;border:10px solid #f54957;font-size:30px;color:#f54957;text-align:center;box-shadow:inset 0 0 10px rgba(0,0,0,.4);position:absolute;top:0;left:0}
+.main-timeline4 .year:before{content:"";border-left:20px solid #f54957;border-top:10px solid transparent;border-bottom:10px solid transparent;position:absolute;bottom:-13px;right:0;transform:rotate(45deg)}
+.main-timeline4 .inner-content{padding:20px 0}
+.main-timeline4 .title{font-size:24px;font-weight:600;color:#f54957;text-transform:uppercase;margin:0 0 5px}
+.main-timeline4 .description{font-size:14px;color:white;margin:0 0 5px}
+.main-timeline4 .timeline:nth-child(2n){padding:0 100px 0 0}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content:before,.main-timeline4 .timeline:nth-child(2n) .year,.main-timeline4 .timeline:nth-child(2n):before{left:auto;right:-10px}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:0 150px 0 0}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content:before{right:-92px}
+.main-timeline4 .timeline:nth-child(2n) .year{right:0}
+.main-timeline4 .timeline:nth-child(2n) .year:before{right:auto;left:0;border-left:none;border-right:20px solid #f54957;transform:rotate(-45deg)}
+.main-timeline4 .timeline:nth-child(2){margin-top:110px}
+.main-timeline4 .timeline:nth-child(odd){margin:-110px 0 0}
+.main-timeline4 .timeline:nth-child(even){margin-bottom:80px}
+.main-timeline4 .timeline:first-child,.main-timeline4 .timeline:last-child:nth-child(even){margin:0}
+.main-timeline4 .timeline:nth-child(2n) .year{border-color:#1ebad0;color:#1ebad0}
+.main-timeline4 .timeline:nth-child(2) .year:before{border-right-color:#1ebad0}
+.main-timeline4 .timeline:nth-child(2n) .title{color:#1ebad0}
+.main-timeline4 .timeline:nth-child(3n) .year{border-color:#7cba01;color:#7cba01}
+.main-timeline4 .timeline:nth-child(3) .year:before{border-left-color:#7cba01}
+.main-timeline4 .timeline:nth-child(3n) .title{color:#7cba01}
+.main-timeline4 .timeline:nth-child(4n) .year{border-color:#f8781f;color:#f8781f}
+.main-timeline4 .timeline:nth-child(4) .year:before{border-right-color:#f8781f}
+.main-timeline4 .timeline:nth-child(4n) .title{color:#f8781f}
+@media only screen and (max-width:1200px){.main-timeline4 .year{top:50%;transform:translateY(-50%)}
+}
+@media only screen and (max-width:990px){.main-timeline4 .timeline{padding-left:75px}
+.main-timeline4 .timeline:nth-child(2n){padding:0 75px 0 0}
+.main-timeline4 .timeline-content{padding-left:130px}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:0 130px 0 0}
+.main-timeline4 .timeline-content:before{width:68px;left:-68px}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content:before{right:-68px}
+}
+@media only screen and (max-width:767px){.main-timeline4{overflow:visible}
+.main-timeline4:before{height:100%;top:0;left:0;transform:translateX(0)}
+.main-timeline4 .timeline:before,.main-timeline4 .timeline:nth-child(2n):before{top:60px;left:-9px;transform:translateX(0)}
+.main-timeline4 .timeline,.main-timeline4 .timeline:nth-child(even),.main-timeline4 .timeline:nth-child(odd){width:100%;float:none;text-align:center;padding:0;margin:0 0 10px}
+.main-timeline4 .timeline-content,.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:0}
+.main-timeline4 .timeline-content:before,.main-timeline4 .timeline:nth-child(2n) .timeline-content:before{display:none}
+.main-timeline4 .timeline:nth-child(2n) .year,.main-timeline4 .year{position:relative;transform:translateY(0)}
+.main-timeline4 .timeline:nth-child(2n) .year:before,.main-timeline4 .year:before{border:none;border-right:20px solid #f54957;border-top:10px solid transparent;border-bottom:10px solid transparent;top:50%;left:-23px;bottom:auto;right:auto;transform:rotate(0)}
+.main-timeline4 .timeline:nth-child(2n) .year:before{border-right-color:#1ebad0}
+.main-timeline4 .timeline:nth-child(3n) .year:before{border-right-color:#7cba01}
+.main-timeline4 .timeline:nth-child(4n) .year:before{border-right-color:#f8781f}
+.main-timeline4 .inner-content{padding:10px}
+}
